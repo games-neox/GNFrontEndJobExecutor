@@ -1,0 +1,11 @@
+use_frameworks!
+
+pod 'GNExceptions'
+pod 'GNLog'
+pod 'GNPreconditions'
+pod 'GNThreadPool'
+
+target 'GNFrontEndJobExecutor_Tests' do
+  pod 'GNFrontEndJobExecutor', :path => '../'
+  pod 'GNTesting'
+end
