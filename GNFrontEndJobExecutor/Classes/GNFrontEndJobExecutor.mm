@@ -85,7 +85,7 @@ static const NSString* const LOG_TAG = @"GNFrontEndJobExecutor";
         return;
     }
 
-    const long jobId = [idGenerator_ generateNextId];
+    const long jobId __unused = [idGenerator_ generateNextId];
     LOG_PRINT_VERBOSE(LOG_TAG, @"executeInMain(%@): Enter(%ld)", job, jobId);
 
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -111,7 +111,7 @@ static const NSString* const LOG_TAG = @"GNFrontEndJobExecutor";
         return;
     }
 
-    const long jobId = [idGenerator_ generateNextId];
+    const long jobId __unused = [idGenerator_ generateNextId];
     LOG_PRINT_VERBOSE(LOG_TAG, @"executeInMain(%@)withChainedCallback(%@): Enter(%ld)", job, callback, jobId);
 
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -144,7 +144,7 @@ static const NSString* const LOG_TAG = @"GNFrontEndJobExecutor";
         return;
     }
 
-    const long jobId = [idGenerator_ generateNextId];
+    const long jobId __unused = [idGenerator_ generateNextId];
     LOG_PRINT_VERBOSE(LOG_TAG, @"executeInMain(%@)withUnchainedCallback(%@): Enter(%ld)", job, callback, jobId);
 
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -176,7 +176,7 @@ static const NSString* const LOG_TAG = @"GNFrontEndJobExecutor";
         return;
     }
 
-    const long jobId = [idGenerator_ generateNextId];
+    const long jobId __unused = [idGenerator_ generateNextId];
     LOG_PRINT_VERBOSE(LOG_TAG, @"executeInLogic(%@): Enter(%ld)", job, jobId);
 
     [logicThreadPool_ enqueue:^{
@@ -202,7 +202,7 @@ static const NSString* const LOG_TAG = @"GNFrontEndJobExecutor";
         return;
     }
 
-    const long jobId = [idGenerator_ generateNextId];
+    const long jobId __unused = [idGenerator_ generateNextId];
     LOG_PRINT_VERBOSE(LOG_TAG, @"executeInLogic(%@)withChainedCallback(%@): Enter(%ld)", job, callback, jobId);
 
     [logicThreadPool_ enqueue:^{
@@ -235,7 +235,7 @@ static const NSString* const LOG_TAG = @"GNFrontEndJobExecutor";
         return;
     }
 
-    const long jobId = [idGenerator_ generateNextId];
+    const long jobId __unused = [idGenerator_ generateNextId];
     LOG_PRINT_VERBOSE(LOG_TAG, @"executeInLogic(%@)withUnchainedCallback(%@): Enter(%ld)", job, callback, jobId);
 
     [logicThreadPool_ enqueue:^{
@@ -268,7 +268,7 @@ static const NSString* const LOG_TAG = @"GNFrontEndJobExecutor";
         return nil;
     }
 
-    const long jobId = [idGenerator_ generateNextId];
+    const long jobId __unused = [idGenerator_ generateNextId];
     LOG_PRINT_VERBOSE(LOG_TAG, @"executeLockingChainedInLogic(%@): Enter(%ld)", job, jobId);
 
     __block id jobResult;
@@ -292,7 +292,7 @@ static const NSString* const LOG_TAG = @"GNFrontEndJobExecutor";
         return;
     }
 
-    const long jobId = [idGenerator_ generateNextId];
+    const long jobId __unused = [idGenerator_ generateNextId];
     LOG_PRINT_VERBOSE(LOG_TAG, @"executeLockingUnchainedInLogic(%@): Enter(%ld)", job, jobId);
 
     [self executeLockingUnchainedJob:^{
@@ -317,7 +317,7 @@ static const NSString* const LOG_TAG = @"GNFrontEndJobExecutor";
         return;
     }
 
-    const long jobId = [idGenerator_ generateNextId];
+    const long jobId __unused = [idGenerator_ generateNextId];
     LOG_PRINT_VERBOSE(LOG_TAG, @"executeInBridge(%@): Enter(%ld)", job, jobId);
 
     [bridgeThreadPool_ enqueue:^{
@@ -343,7 +343,7 @@ static const NSString* const LOG_TAG = @"GNFrontEndJobExecutor";
         return;
     }
 
-    const long jobId = [idGenerator_ generateNextId];
+    const long jobId __unused = [idGenerator_ generateNextId];
     LOG_PRINT_VERBOSE(LOG_TAG, @"executeInBridge(%@)withChainedCallback(%@): Enter(%ld)", job, callback, jobId);
 
     [bridgeThreadPool_ enqueue:^{
@@ -376,7 +376,7 @@ static const NSString* const LOG_TAG = @"GNFrontEndJobExecutor";
         return;
     }
 
-    const long jobId = [idGenerator_ generateNextId];
+    const long jobId __unused = [idGenerator_ generateNextId];
     LOG_PRINT_VERBOSE(LOG_TAG, @"executeInBridge(%@)withUnchainedCallback(%@): Enter(%ld)", job, callback, jobId);
 
     [bridgeThreadPool_ enqueue:^{
@@ -408,7 +408,7 @@ static const NSString* const LOG_TAG = @"GNFrontEndJobExecutor";
         return nil;
     }
 
-    const long jobId = [idGenerator_ generateNextId];
+    const long jobId __unused = [idGenerator_ generateNextId];
     LOG_PRINT_VERBOSE(LOG_TAG, @"executeLockingChainedInBridge(%@): Enter(%ld)", job, jobId);
 
     __block id jobResult;
@@ -436,7 +436,7 @@ static const NSString* const LOG_TAG = @"GNFrontEndJobExecutor";
         return;
     }
 
-    const long jobId = [idGenerator_ generateNextId];
+    const long jobId __unused = [idGenerator_ generateNextId];
     LOG_PRINT_VERBOSE(LOG_TAG, @"executeLockingUnchainedInBridge(%@): Enter(%ld)", job, jobId);
 
     [self executeLockingUnchainedJob:^{
