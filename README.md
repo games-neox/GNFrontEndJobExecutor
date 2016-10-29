@@ -1,6 +1,6 @@
 # GNFrontEndJobExecutor
 
-[![CI Status](http://img.shields.io/travis/Games Neox/GNFrontEndJobExecutor.svg?style=flat)](https://travis-ci.org/Games Neox/GNFrontEndJobExecutor)
+[![CI Status](http://img.shields.io/travis/games-neox/GNFrontEndJobExecutor.svg?style=flat)](https://travis-ci.org/games-neox/GNFrontEndJobExecutor)
 [![Version](https://img.shields.io/cocoapods/v/GNFrontEndJobExecutor.svg?style=flat)](http://cocoapods.org/pods/GNFrontEndJobExecutor)
 [![License](https://img.shields.io/cocoapods/l/GNFrontEndJobExecutor.svg?style=flat)](http://cocoapods.org/pods/GNFrontEndJobExecutor)
 [![Platform](https://img.shields.io/cocoapods/p/GNFrontEndJobExecutor.svg?style=flat)](http://cocoapods.org/pods/GNFrontEndJobExecutor)
