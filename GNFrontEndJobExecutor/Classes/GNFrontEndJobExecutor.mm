@@ -20,7 +20,7 @@
 #import <utility>
 
 #pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wno-unused-variable"
+#pragma clang diagnostic ignored "-Wunused-variable"
 
 
 
